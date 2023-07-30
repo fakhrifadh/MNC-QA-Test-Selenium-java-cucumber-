@@ -1,0 +1,135 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-30T19:48:54.598Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3106816000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "login - Success login with phone number",
+        "description": "",
+        "id": "login;login---success-login-with-phone-number",
+        "after": [
+          {
+            "result": {
+              "duration": 186266000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2525989000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user open to \"mister-aladin-login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mister-aladin-login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "steps.LoginSteps.userNavigates(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1211367000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click to login with phone number",
+            "match": {
+              "location": "steps.LoginSteps.userClickPhoneNumberLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 369554000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user input phone number \"81313559122\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"81313559122\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.LoginSteps.userInputPhoneNumber(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1219438000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user click login button with valid phone number",
+            "match": {
+              "location": "steps.LoginSteps.userClickLoginWithPhoneNumber()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1755173000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should be at the OTP verification page",
+            "match": {
+              "location": "steps.LoginSteps.userAtOTPVerificationPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@login-success-with-phone-number"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

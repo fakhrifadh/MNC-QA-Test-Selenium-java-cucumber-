@@ -1,0 +1,141 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-30T16:59:52.268Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3485490000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "login - Success login with email",
+        "description": "",
+        "id": "login;login---success-login-with-email",
+        "after": [
+          {
+            "result": {
+              "duration": 154299000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5305850000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user open to \"mister-aladin-login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mister-aladin-login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "steps.LoginSteps.userNavigates(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 321398000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user input email \"fakhrichod@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fakhrichod@gmail.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.LoginSteps.userInputEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130619000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user input password \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginSteps.userInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1194322000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click login button with valid email and password",
+            "match": {
+              "location": "steps.LoginSteps.userClickLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17759000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should be at the home page",
+            "match": {
+              "location": "steps.LoginSteps.userAtDashboardPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@login-success-with-email"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
